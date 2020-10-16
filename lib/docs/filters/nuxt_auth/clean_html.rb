@@ -4,9 +4,9 @@ module Docs
       def call
         @doc = at_css('.content__default')
 
-        at_css('h1').content = 'Nuxt.js Auth' if root_page?
+        at_css('h1').content = 'Nuxt.js' if root_page?
 
-        css('.demo', '.guide-links', '.footer', '#ad', 'a.header-anchor').remove
+        css('.demo', '.guide-links', '.footer', '#ad', 'a.header-anchor', 'header').remove
 
         # Remove code highlighting
         css('figure').each do |node|

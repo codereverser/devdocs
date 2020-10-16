@@ -6,7 +6,7 @@ module Docs
 
         at_css('h1').content = 'Nuxt.js HTTP' if root_page?
 
-        css('.demo', '.guide-links', '.footer', '#ad', 'a.header-anchor').remove
+        css('.demo', '.guide-links', '.footer', '#ad', 'a.header-anchor', 'header').remove
 
         # Remove code highlighting
         css('figure').each do |node|
