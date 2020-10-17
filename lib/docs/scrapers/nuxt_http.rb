@@ -24,7 +24,7 @@ module Docs
     html_filters.push 'nuxt_http/entries', 'nuxt_http/clean_html'
 
     def get_latest_version(opts)
-      get_latest_github_release('nuxt-community', 'auth-module', opts)
+      get_latest_github_release('nuxt', 'http', opts)
     end
   end
 end
